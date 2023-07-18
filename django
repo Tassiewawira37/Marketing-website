@@ -1,0 +1,41 @@
+django-admin startproject myproject
+cd myproject
+python manage.py startapp myapp
+from django.db import models
+
+class Item(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+from rest_framework import serializers
+from .models import Item
+
+class ItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Item
+        fields = '__all__'
+
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from .models import Item
+from .serializers import ItemSerializer
+
+@api_view(['GET'])
+def search_items(request):
+    query = request.GET.get('q', '')
+    items = Item.objects.filter(name__icontains=query)
+    serializer = ItemSerializer(items, many=True)
+    return Response(serializer.data)
+from django.urls import path
+from .views import search_items
+
+urlpatterns = [
+    path('search/', search_items, name='search_items'),
+]
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/', include('myapp.urls')),
+]
+python manage.py runserver
