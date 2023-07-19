@@ -5,38 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Cutive+Mono&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
+    <div class="title-bar">
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit" id="searchButton"><i class="fa fa-search"></i></button>
+        </div>
+        <span class="title-text">Elescalate</span>
+    </div>
     <header>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
             </ul>
         </nav>
     </header>
+    <div id="slider">
+        <img src="https://img.freepik.com/premium-photo/promotion-goods-services-using-mailing-open-envelope-with-letter-laptop-sign-up-mailing-list-3d-rendering_648564-528.jpg" alt="Image 1">
+        <img src="https://img.freepik.com/premium-photo/promotion-goods-services-using-mailing-open-envelope-with-letter-laptop-sign-up-mailing-list-3d-rendering_648564-528.jpg" alt="Image 2">
+        <img src="https://img.freepik.com/premium-vector/data-analysis-concept-3d-illustration-icon-composition-with-statistics-charts-diagrams-site-interface-business-strategy-development-targeting-vector-illustration-modern-web-design_198565-1658.jpg" alt="Image 3">
+        <img src="https://t3.ftcdn.net/jpg/05/13/62/30/360_F_513623057_HWsejojWXHCwQveuAajhTGXozWE0dAHb.jpg" alt="Image 3">
+    </div>
 
     <section id="home">
-        <h1>Welcome to our Marketing Website</h1>
-        <p>Discover the power of effective marketing strategies.</p>
+        <h1>Introducing Elescalate</h1>
+        <h3>Focused Goals, Strategic Solutions</h3>
+        <div class="home-image">
+        </div>
     </section>
+    <h6>Discover the power of effective marketing strategies. At Elescalate we offer you a chance to build and enhance your brand.</h6>
 
     <section id="about">
         <h2>About Us</h2>
+        <div class="about-image">
+            <img src="https://uploads-ssl.webflow.com/5e7aaaa0f0ec4440dfa900be/6007a3060ff880859ace594b_Denver-SEO-Agency.jpeg" alt="Image 1">
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat mi in justo luctus, ut vulputate metus malesuada. Sed vitae vestibulum magna. Mauris at nisi euismod, facilisis quam a, mattis odio.</p>
     </section>
 
     <section id="services">
         <h2>Our Services</h2>
-        <ul>
-            <li>Search Engine Optimization</li>
-            <li>Social Media Marketing</li>
-            <li>Email Marketing</li>
-            <li>Content Creation</li>
-        </ul>
+        <div class="service-grid">
+            <div class="service">
+                <img src="https://topagency.com/wp-content/uploads/2022/08/christina-wocintechchat-com-LQ1t-8Ms5PY-unsplash-scaled.jpg" alt="Search Engine Optimization">
+                <p>Boost your website's visibility and increase organic traffic through effective search engine optimization strategies.</p>
+            </div>
+            <div class="service">
+                <img src="https://s39940.pcdn.co/wp-content/uploads/2020/04/woman-editing-video.jpg" alt="Social Media Marketing">
+                <p>Engage and expand your audience through strategic social media campaigns and targeted marketing techniques.</p>
+            </div>
+            <div class="service">
+                <img src="https://www.uscreen.tv/wp-content/uploads/2020/06/Launch-video-membership-apps-1055x552.jpg" alt="Content Creation">
+                <p>Create compelling and valuable content that resonates with your audience, drives engagement, and builds brand authority.</p>
+            </div>
+            <div class="service">
+                <img src="https://everything-pr.com/wp-content/uploads/2020/09/email-marketing-1.jpg" alt="Email Marketing">
+                <p>Reach your customers directly and effectively with personalized and engaging email marketing campaigns.</p>
+            </div>
+        </div>
     </section>
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-container">
+            <div class="brand-item">
+                <img src="brand 1" alt="Brand 1">
+                <p>Description of Brand 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="brand-item">
+                <img src="brand 2" alt="Brand 2">
+                <p>Description of Brand 2. Sed vitae vestibulum magna. Mauris at nisi euismod.</p>
+            </div>
+            <div class="brand-item">
+                <img src="brand 3" alt="Brand 3">
+                <p>Description of Brand 3. Nulla volutpat mi in justo luctus, ut vulputate metus.</p>
+            </div>
+            <div class="brand-item">
+                <img src="hair extensions kenya online instagram 4.jpg" alt="Brand 4">
+                <p>Description of Brand 4. Nulla volutpat mi in justo luctus, ut vulputate metus.</p>
+            </div>
 
     <section id="contact">
         <h2>Contact Us</h2>
@@ -52,7 +107,7 @@
         <p>&copy; 2023 Marketing Website. All rights reserved.</p>
     </footer>
     
-   
     <script src="script.js"></script>
 </body>
 </html>
+
