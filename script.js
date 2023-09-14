@@ -1,4 +1,4 @@
-// JavaScript code for image slider
+// JavaScript code for image slider, ensure the image slides from right to left
 const slider = document.getElementById('slider');
 const images = slider.getElementsByTagName('img');
 
