@@ -49,7 +49,7 @@
         <div class="about-image">
             <img src="https://uploads-ssl.webflow.com/5e7aaaa0f0ec4440dfa900be/6007a3060ff880859ace594b_Denver-SEO-Agency.jpeg" alt="Image 1">
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat mi in justo luctus, ut vulputate metus malesuada. Sed vitae vestibulum magna. Mauris at nisi euismod, facilisis quam a, mattis odio.</p>
+        <p>Lorem  dolor sit amet, consectetur adipiscing elit. Nulla volutpat mi in justo luctus, ut vulputate metus malesuada. Sed vitae vestibulum magna. Mauris at nisi euismod, facilisis quam a, mattis odio.</p>
     </section>
 
     <section id="services">
